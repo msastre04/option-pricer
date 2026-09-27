@@ -41,21 +41,6 @@ construction la surface met le modèle en défaut avec ses propres données.
 ![Surface de volatilité SPY](assets/surface_SPY.png)
 ![Smiles par échéance SPY](assets/smiles_multi_SPY.png)
 
-## Structure
-
-option-pricer/
-├── pricer/
-│   ├── black_scholes.py   # Prix analytique + Grecques
-│   ├── binomial.py        # Arbre CRR — options européennes et américaines
-│   ├── monte_carlo.py     # Simulation MC, variates antithétiques, IC95%
-│   ├── implied_vol.py     # Inversion de Black-Scholes (méthode de Brent)
-│   ├── smile.py           # Smile de vol sur une échéance (données réelles)
-│   └── vol_surface.py     # Surface multi-échéances (smiles + 3D)
-├── tests/
-│   └── test_pricers.py    # Convergence, parité call-put, cohérence des Grecques
-├── main.py
-└── requirements.txt
-
 ## Auteur & Licence
 
 Projet développé par M.Sastre.
